@@ -1,0 +1,62 @@
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.redText {
+    color: red;
+}
+
+.order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    background-color: rgba(255, 206, 10, 0.8);
+    width: 120px;
+    padding: 0px 10px;
+}
+
+
+.text {
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+}
+
+.desc {
+    font-size: 20px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    padding: 0px;
+    margin: 20px 0px;
+}
+
+.title2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.pizzaContainer {
+    margin: 30px;
+}
+
+.pizzas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+}
