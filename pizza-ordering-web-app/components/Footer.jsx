@@ -35,7 +35,7 @@ const Footer = () => {
           <li className={styles.listItem}>Legal</li>
         </ul>
       </div>
-      <div className={styles.firstList}>
+      <div className={styles.lastList}>
         <h2 className={styles.title}>SOCIAL MEDIA</h2>
         <div className={styles.icons}>
           <i className={`fab fa-facebook-f ${styles['facebook-icon']}`}></i>

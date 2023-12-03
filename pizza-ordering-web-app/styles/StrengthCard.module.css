@@ -5,5 +5,12 @@
 }
 
 .desc {
-    font-size: 14px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .strengthCard {
+        display: flex;
+        flex-direction: column;
+    }
 }

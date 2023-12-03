@@ -22,8 +22,8 @@ const PizzaCard = ({ pizza }) => {
       </div>
       <div className={styles.pizzaDetails}>
         <div className={styles.namePrice}>
-        <h2 className={styles.pizzaName}>{name}</h2>
-        <div className={styles.pizzaPrice}>${price}</div>
+          <h2 className={styles.pizzaName}>{name}</h2>
+          <h5 className={styles.pizzaPrice}>${price}</h5>
         </div>
         <div className={styles.pizzaRating}>{renderStars()}</div>
       </div>

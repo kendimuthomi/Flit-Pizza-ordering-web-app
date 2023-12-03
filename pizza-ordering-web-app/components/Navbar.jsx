@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 import styles from "../styles/Navbar.module.css"
 import Image from "next/image"
 import { useSelector } from 'react-redux'
@@ -34,8 +35,7 @@ const Navbar = () => {
           <li className={styles.listItem}>PAGES</li>
           <li className={styles.listItem}>BLOG</li>
           <li className={styles.listItem}>CONTACTS</li>
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </ul>
+          <li><i class="fa-solid fa-magnifying-glass"></i></li>
         <Link href='/cart' passHref>
         <div className={styles.item}>
           <div className={styles.cart}>
@@ -44,6 +44,7 @@ const Navbar = () => {
           </div>
         </div>
         </Link>
+        </ul>
       </div>
     </div>
   )

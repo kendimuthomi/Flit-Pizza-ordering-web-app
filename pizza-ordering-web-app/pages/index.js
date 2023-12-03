@@ -43,17 +43,17 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.center}>
-        <Image src="/images/pizza3.png" alt='' width={400} height={400}></Image>
-        <div className={styles.texts}>
-          <h5 className={styles.title2}>Daily fresh and <br /> always tasty</h5>
-          <p className={styles.centerDesc}>There are many variations of passages of Lorem Ipsum available, but the majority haved </p>
-        </div>
-        <div className={styles.garlicImg}>
-          <Image src="/images/pizza-garlic.png" alt='' width={90} height={90}></Image>
-        </div>
+          <Image src="/images/pizza3.png" alt='' width={400} height={400}></Image>
+          <div className={styles.texts}>
+            <div>
+              <h5 className={styles.title2}>Daily fresh and <br /> always tasty</h5>
+              <p className={styles.centerDesc}>There are many variations of passages of Lorem Ipsum available, but the majority haved </p>
+            </div>
+            <div><Image src="/images/pizza-garlic.png" alt='' width={90} height={90} className={styles.garlicImg}></Image></div>
+          </div>
         </div>
         <div className={styles.pizzaContainer}>
-        <div className={styles.texts}>
+        <div className={styles.texts2}>
           <span className={styles.redText}>Popular Dishes</span>
           <h2 className={styles.title2}>Browse our Menu</h2>
         </div>
@@ -69,8 +69,8 @@ export default function Home() {
         <span className={styles.redText}>Our Strength</span>
         <h2 className={styles.title2}>Why We Are The Best</h2>
         </div>
-        <div className={styles.imgContainer}>
-        <Image src="/images/pizza-strength-vacter_oeljrn_1_rdaqiq.png" alt='' width={150} height={150} />
+        <div className={styles.imageContainer}>
+        <Image src="/images/pizza-strength-vacter_oeljrn_1_rdaqiq.png" alt='' width={250} height={200} />
         </div>
         </div>
         <div className={styles.strengthDesc}>

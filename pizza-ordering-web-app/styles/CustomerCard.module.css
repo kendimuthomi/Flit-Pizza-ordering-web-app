@@ -30,3 +30,9 @@
 .customerComment {
     font-size: 14px;
 }
+
+@media screen and (max-width: 768px) {
+    .customerImage {
+        margin: 0 50%;
+    }
+}
