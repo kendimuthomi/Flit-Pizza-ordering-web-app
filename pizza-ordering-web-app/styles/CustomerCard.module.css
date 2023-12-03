@@ -1,0 +1,32 @@
+.customerReview {
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    border-radius: 8px;
+    margin: 0px;
+    padding: 16px;
+}
+
+.customerImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 30%;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.customerName{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.customerComment {
+    font-size: 14px;
+}

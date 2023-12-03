@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../styles/PizzaCard.module.css'
 import Image from 'next/image';
+import Link from 'next/link';
 
 const PizzaCard = ({ pizza }) => {
     const { name, image, rating, price } = pizza;
@@ -27,8 +28,12 @@ const PizzaCard = ({ pizza }) => {
         <div className={styles.pizzaRating}>{renderStars()}</div>
       </div>
       <div className={styles.order}>
-        <Image src="/images/white-cart.png" alt='' width={24} height={24} />
-        <div className={styles.text}>ORDER NOW</div>
+      <Link href={`/product/${pizza.id}`}>
+        <button className={styles.orderBtn}>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div className={styles.orderText}>ORDER NOW</div>
+        </button>
+        </Link>
       </div>
     </div>
   )

@@ -5,34 +5,78 @@
     margin: 30px;
 }
 
-.title {
+.right {
+    flex: 1;
+    padding: 20px;
+}
+
+.left {
+    flex: 1;
+}
+
+.topTitle {
     font-weight: 700;
+    font-size: 4.2rem;
+}
+
+.topDesc {
     font-size: 32px;
+}
+
+.imgContainer img {
+    position: relative;
+    z-index: 20;
+    left: 2%;
+}
+
+.yellowBg {
+    background-color: #fbb21e;
+    border-radius: 100%;
+    position: relative;
+    transform: translate(50%);
+    height: 710px;
+    margin-top: -90%;
+}
+
+.yellowBg img{
+    position: relative;
+    top: 70%;
+    vertical-align: middle;
+    color: transparent;
 }
 
 .redText {
     color: red;
+    font-weight: 500;
 }
 
-.order {
+.orderBtn {
+    background: #fbb200;
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0.8rem 1.7rem;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 15px;
-    background-color: rgba(255, 206, 10, 0.8);
-    width: 120px;
-    padding: 0px 10px;
 }
 
 
-.text {
-    font-size: 12px;
-    font-weight: 500;
-    color: white;
+.orderText {
+    margin-left: 0.5rem;
 }
 
-.desc {
-    font-size: 20px;
+.centerDesc {
+    font-size: 1.2rem;
+    line-height: 2;
+    margin-top: 2rem;
+}
+
+.garlicImg {
+    padding: 8rem 1rem 0 3rem;
 }
 
 .center {
@@ -40,12 +84,17 @@
     align-items: center;
     justify-content: space-around;
     width: 80%;
-    padding: 0px;
+    padding: 6rem 1.5rem 0 3rem;
     margin: 20px 0px;
 }
 
+.texts {
+    margin: 2rem;
+}
+
+
 .title2 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
     margin-bottom: 15px;
 }
@@ -60,3 +109,34 @@
     gap: 10px;
     max-width: 1200px;
 }
+
+.top {
+    display: flex;
+}
+
+.strengthContainer {
+    background-color: rgba(254, 252, 232, 1);
+    margin: 30px;
+    padding: 10px;
+}
+
+.strengthDesc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+}
+
+.commentContainer {
+    margin: 30px;
+}
+
+.commentCard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    text-align: center;
+    margin: 20px;
+}
+

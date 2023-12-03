@@ -2,45 +2,17 @@ import React from 'react'
 
 const PizzaList = [
     {
-        name: 'Margherita',
-        image: '/images/pizza1.png',
-        rating: 4.5,
-        price: 10.99,
+        name: 'Burga Pizza',
+        image: '/images/Burga.jpg',
+        rating: 5,
+        price: 20,
     },
 
     {
-        name: 'Margherita',
-        image: '/images/pizza2.png',
-        rating: 4.5,
-        price: 10.99,
-    },
-
-    {
-        name: 'Margherita',
-        image: '/images/pizza3.png',
-        rating: 4.5,
-        price: 10.99,
-    },
-
-    {
-        name: 'Margherita',
-        image: '/images/pizza1.png',
-        rating: 4.5,
-        price: 10.99,
-    },
-
-    {
-        name: 'Margherita',
-        image: '/images/pizza2.png',
-        rating: 4.5,
-        price: 10.99,
-    },
-
-    {
-        name: 'Margherita',
-        image: '/images/pizza3.png',
-        rating: 4.5,
-        price: 10.99,
+        name: 'Burga Pizza',
+        image: '/images/Burga.jpg',
+        rating: 5,
+        price: 20,
     },
 ]
 

@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(247, 218, 111, 0.23);
+}
+
+.title {
+    font-weight: 700;
+    margin: 10px;
+}
+
+.listItem {
+    margin: 10px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.23);
+}
+
+.signBtn {
+    background-color: #fbb200;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0rem;
+    border: 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.icons i{
+    padding: 0.6rem 0.9rem;
+    font-size: 1.4rem;
+    color: #fff;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.facebook-icon {
+    background-color: #3b579d;
+}
+
+.pinterest-icon {
+    background-color: #cc2127;
+}
+
+.twitter-icon {
+    background-color: #2caae1;
+}
+
+.instagram-icon {
+    background-color: #dc4a38;
+}

@@ -6,6 +6,8 @@ import PizzaList from '@/components/PizzaList'
 import StrengthCard from '@/components/StrengthCard'
 import StrengthList from '@/components/StrengthList'
 import styles from '../styles/Home.module.css'
+import CustomerList from '@/components/CustomerList'
+import CustomerCard from '@/components/CustomerCard'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,29 +20,37 @@ export default function Home() {
       </Head>
       <main className={styles.mainContainer}>
         <div className={styles.top}>
-        <div className={styles.texts}>
-          <h1 className={styles.title}>Handmade,<br /> With an Extra<br /> Pinch of <span className={styles.redText}>Love</span></h1>
-          <p className={styles.desc}>Our Pizzas, with their irresistible blend of crisp crust, gooey cheese,<br />
-            and flavorful toppings, are the epitome of culinary delight.</p>
-          <div className={styles.order}>
-            <Image src="/images/white-cart.png" alt='' width={24} height={24} />
-            <div className={styles.text}>ORDER NOW</div>
+          <div className={styles.left}>
+          <div className={styles.texts}>
+            <h1 className={styles.topTitle}>Handmade,<br /> With an Extra<br /> Pinch of <span className={styles.redText}>Love</span></h1>
+            <p className={styles.topDesc}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button className={styles.orderBtn}>
+              <i class="fa-solid fa-cart-shopping"></i>
+              <div className={styles.orderText}>ORDER NOW</div>
+            </button>
+            </div>
+          </div>
+          <div className={styles.right}>
+            <div className={styles.imgContainer}>
+              <Image src="/images/pizza1.png" alt='' width={450} height={450} className={styles.img2}></Image>
+            </div>
+            <div className={styles.onionImg}>
+            <Image src="/images/pizza-onion.png" alt='' width={100} height={90} className={styles.img3}></Image>
+            </div>
+            <div className={styles.yellowBg}>
+            <Image src="/images/pizza2.png" alt='' width={200} height={200} className={styles.img4}></Image>
+            </div>
           </div>
         </div>
-        <div className={styles.imageContainer}>
-        <Image src="/images/yellow-background.png" alt='' width={250} height={230}></Image>
-        <Image src="/images/pizza1.png" alt='' width={150} height={130}></Image>
-        <Image src="/images/pizza2.png" alt='' width={100} height={80}></Image>
-        <Image src="/images/pizza-onion.png" alt='' width={50} height={30}></Image>
-        </div>
-        </div>
         <div className={styles.center}>
-        <Image src="/images/pizza3.png" alt='' width={350} height={330}></Image>
+        <Image src="/images/pizza3.png" alt='' width={400} height={400}></Image>
         <div className={styles.texts}>
-          <h2 className={styles.title2}>Daily fresh and <br /> always tasty</h2>
-          <p className={styles.desc}>A universal favorite, these circular creations come<br /> in endless variations to suit every taste bud. </p>
+          <h5 className={styles.title2}>Daily fresh and <br /> always tasty</h5>
+          <p className={styles.centerDesc}>There are many variations of passages of Lorem Ipsum available, but the majority haved </p>
         </div>
-        <Image src="/images/pizza-garlic.png" alt='' width={50} height={30}></Image>
+        <div className={styles.garlicImg}>
+          <Image src="/images/pizza-garlic.png" alt='' width={90} height={90}></Image>
+        </div>
         </div>
         <div className={styles.pizzaContainer}>
         <div className={styles.texts}>
@@ -54,13 +64,30 @@ export default function Home() {
       </div>
       </div>
       <div className={styles.strengthContainer}>
+        <div className={styles.top}>
+          <div className={styles.texts}>
         <span className={styles.redText}>Our Strength</span>
         <h2 className={styles.title2}>Why We Are The Best</h2>
+        </div>
+        <div className={styles.imgContainer}>
+        <Image src="/images/pizza-strength-vacter_oeljrn_1_rdaqiq.png" alt='' width={150} height={150} />
+        </div>
+        </div>
         <div className={styles.strengthDesc}>
         {StrengthList.map((strength, index) => (
         <StrengthCard key={index} strength={strength}/>
       ))}
         </div>
+      </div>
+      <div className={styles.commentContainer}>
+        <Image src="/images/leaf.png" alt='' width={150} height={150} />
+        <span className={styles.redText}>Customer Feedback</span>
+        <h2 className={styles.title2}>Client Testimonials</h2>
+      </div>
+      <div className={styles.commentCard}>
+        {CustomerList.map((comment, index) => (
+          <CustomerCard key={index} comment={comment}/>
+        ))}
       </div>
       </main>
     </div>

@@ -7,7 +7,7 @@ const StrengthCard = ({ strength }) => {
   return (
     <div className={styles.strengthCard}>
         <div className={styles.strengthImage}>
-        <Image src={image} alt={title} width={32} height={32} />
+        <Image src={image} alt={title} width={32} height={40} />
         </div>
         <div className={styles.strengthDesc}>
             <h3 className={styles.descTitle}>{title}</h3>

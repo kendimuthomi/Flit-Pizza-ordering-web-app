@@ -1,0 +1,91 @@
+.pizzas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 0.3s ease-in-out;
+  }
+.open {
+    left: 0;
+}
+
+.topHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.filterProduct {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.invisible {
+    display: none;
+  }
+
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.filterBtn {
+    background: #fbb200;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0.3rem 1.7rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.sort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sort p{
+    flex-basis: 45%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.sortSelect {
+    display: block;
+    width: 30%;
+    padding: .375rem 2.25rem .375rem .75rem;
+    -moz-padding-start: calc(0.75rem - 3px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}

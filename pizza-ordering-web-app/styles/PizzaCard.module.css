@@ -1,6 +1,6 @@
 /* styles/PizzaCard.module.css */
 .pizzaCard {
-    border: 1px solid grey;
+    border: 1px solid rgba(0, 0, 0, 0.13);
     border-radius: 8px;
     margin: 0px;
     padding: 16px;
@@ -16,19 +16,20 @@
   }
   
   .pizzaName {
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-bottom: 8px;
-    font-weight: 500;
+    font-weight: 700;
   }
   
   .pizzaRating {
-    color: #ffc107; /* Yellow color for stars */
+    color: #ffc107;
     margin-bottom: 8px;
   }
   
   .pizzaPrice {
     font-weight: bold;
     color: red;
+    font-size: 2rem;
   }
 
   .namePrice {
@@ -37,15 +38,18 @@
     justify-content: space-between;
   }
 
-  .order {
+  .orderBtn {
+    background: #fbb200;
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0.8rem 1.7rem;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 15px;
-    background-color: rgba(255, 206, 10, 0.8);
-    width: 120px;
-    height: 30px;
-    padding: 0px 10px;
 }
 
 .text {
