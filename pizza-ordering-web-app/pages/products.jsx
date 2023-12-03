@@ -18,9 +18,6 @@ const Products = () => {
         setSelectedOption(event.target.value);
     };
 
-    const hideButton = () => {
-        setIsVisible(false);
-    };
     const filterPizzas = () => {
         const filtered = PizzaList.filter(pizza => pizza.price <= priceFilter);
         setFilteredPizzas(filtered);
@@ -30,20 +27,16 @@ const Products = () => {
       setIsOpen(!isOpen);
     };
 
+    const closeSidebar = () => {
+      setIsOpen(false);
+    }
+
   return (
-    <div>
-        <div className={styles.top}>
-      <div>
-        {isVisible && (
-            <button onClick={() => { filterPizzas(); toggleSidebar(); hideButton() }} className={styles.filterBtn}>
-              <TbMenuDeep />
-                Filter</button>
-        )}
-      </div>
-      {isOpen && (
+    <div className={`${styles.page} ${isOpen ? styles.sidebarOpen : ''}`}>
       <div className={`${styles.sidebar} ${isOpen ? styles.open : ''}`}>
+        <div className={styles.sidebarTop}>
             <label htmlFor="priceFilter">Filter by Price:</label>
-            <button onClick={toggleSidebar}>
+            <button>
               <MdClose />
             </button>
           <input
@@ -55,6 +48,7 @@ const Products = () => {
           <span>{priceFilter}</span>
           <p>Price: $40 - $74</p>
           <button>Filter</button>
+        </div>
         <div>
           <h5 className={styles.sidebarTitle}>Top product</h5>
             {filteredPizzas.map((pizza, index) => (
@@ -68,23 +62,26 @@ const Products = () => {
             ))}
           </div>
         </div>
-        )}
-      <div className={styles.sort}>
-        <p>Showing all 9 results</p>
-        <label htmlFor="dropdown"></label>
-      <select id="dropdown" className={styles.sortSelect} value={selectedOption} onChange={handleOptionChange}>
-        <option value="">Default Sorting</option>
-        <option value="option1">One</option>
-        <option value="option2">Two</option>
-        <option value="option2">Three</option>
-      </select>
-      </div>
-      </div>
-      <div className={styles.pizzas}>
-        {PizzaList.map((pizza, index) => (
-        <PizzaCard key={index} pizza={pizza} className={styles.pizza} />
-      ))}
-      </div>
+      <main className={styles.main}>
+        <button onClick={() => { filterPizzas(); toggleSidebar() }} className={styles.filterBtn}>
+          <TbMenuDeep />Filter
+        </button>
+        <div className={styles.sort}>
+          <p>Showing all 9 results</p>
+          <label htmlFor="dropdown"></label>
+        <select id="dropdown" className={styles.sortSelect} value={selectedOption} onChange={handleOptionChange}>
+          <option value="">Default Sorting</option>
+          <option value="option1">One</option>
+          <option value="option2">Two</option>
+          <option value="option2">Three</option>
+        </select>
+        </div>
+        <div className={styles.pizzas}>
+          {PizzaList.map((pizza, index) => (
+          <PizzaCard key={index} pizza={pizza} className={styles.pizza} />
+        ))}
+        </div>
+      </main>
     </div>
   )
 }
