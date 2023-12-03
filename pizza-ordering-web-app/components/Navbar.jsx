@@ -6,7 +6,12 @@ import Link from 'next/link'
 
 const Navbar = () => {
 
-  const quantity = useSelector((state) => state.cart.quantity)
+  const quantity = useSelector((state) => state.cart.quantity);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className={styles.container}>
       <div className={styles.image}>
@@ -15,7 +20,10 @@ const Navbar = () => {
       <div className={styles.image}>
         <Image src="/images/pizza-header-img_krzjsl.png" alt='' width={150} height={50} />
       </div>
-      <div className={styles.item}>
+      <div className={styles.menuToggle} onClick={toggleMenu}>
+        <i className="fa-solid fa-bars"></i>
+      </div>
+      <div className={`${styles.menuItems} ${isOpen ? styles.showMenu : ''}`}>
         <ul className={styles.list}>
           <Link href='/' passHref>
           <li className={styles.listItem}>HOME</li>
